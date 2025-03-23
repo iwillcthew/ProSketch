@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import controller.HomeController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -9,9 +10,15 @@ import javafx.stage.Stage;
 public class ProSketchApplication extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("MainView.fxml"));
-        primaryStage.setTitle("ProSketch - Drawing App");
-        primaryStage.setScene(new Scene(root, 800, 600));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/demo/HomeView.fxml"));
+        Parent root = loader.load();
+        HomeController homeController = loader.getController();
+        homeController.setStage(primaryStage);
+
+        Scene scene = new Scene(root, 800, 600);
+        scene.getStylesheets().add(getClass().getResource("/com/example/demo/style.css").toExternalForm());
+        primaryStage.setTitle("ProSketch - Home");
+        primaryStage.setScene(scene);
         primaryStage.show();
     }
 

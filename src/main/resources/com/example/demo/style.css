@@ -1,0 +1,181 @@
+/* Giao diện chung */
+.root {
+    -fx-background-color: linear-gradient(to bottom, #e3f2fd, #bbdefb); /* Gradient nền cũ */
+    -fx-padding: 10;
+}
+
+/* Giao diện Home Screen */
+.home-root {
+    -fx-background-color: linear-gradient(to bottom, #90caf9, #42a5f5);
+    -fx-alignment: center;
+    -fx-spacing: 25;
+}
+
+.title {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 8, 0, 0, 3);
+}
+
+.home-button {
+    -fx-background-color: #42a5f5;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-padding: 12 30;
+    -fx-background-radius: 12;
+    -fx-font-weight: bold;
+    -fx-border-radius: 12;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 6, 0, 0, 3);
+}
+
+.home-button:hover {
+    -fx-background-color: #1976d2;
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 4);
+}
+
+/* Giao diện Main Screen */
+.toolbar {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #bbdefb;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 6, 0, 0, 3); /* Hiệu ứng đổ bóng cũ */
+}
+
+/* Thanh công cụ phụ bên trái */
+.side-toolbar {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #bbdefb;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 6, 0, 0, 3); /* Hiệu ứng đổ bóng cũ */
+    -fx-min-width: 60px;
+    -fx-alignment: center;
+}
+
+.tool-button {
+    -fx-background-color: #42a5f5;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-padding: 8 12;
+    -fx-background-radius: 8;
+    -fx-font-weight: bold;
+}
+
+.tool-button:hover {
+    -fx-background-color: #1976d2;
+    -fx-scale-y: 1.1;
+    -fx-scale-x: 1.1;
+}
+
+.shape-combo {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #bbdefb;
+    -fx-border-width: 2;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-font-size: 12px;
+    -fx-pref-width: 120px;
+}
+
+.color-picker {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #bbdefb;
+    -fx-border-width: 2;
+    -fx-font-size: 12px;
+    -fx-pref-width: 40px;
+    -fx-pref-height: 25px;
+}
+
+/* Nút màu cố định */
+.color-button {
+    -fx-pref-width: 25px;
+    -fx-pref-height: 25px;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #bbdefb;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 4, 0, 0, 2);
+}
+
+#colorBlack {
+    -fx-background-color: #000000;
+}
+
+#colorWhite {
+    -fx-background-color: #ffffff;
+}
+
+#colorRed {
+    -fx-background-color: #ff0000;
+}
+
+#colorGreen {
+    -fx-background-color: #00ff00;
+}
+
+#colorBlue {
+    -fx-background-color: #0000ff;
+}
+
+#colorYellow {
+    -fx-background-color: #ffff00;
+}
+
+.slider {
+    -fx-pref-width: 150px;
+}
+
+.group-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #333;
+    -fx-font-weight: bold;
+}
+
+.label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #333;
+}
+
+.canvas {
+    -fx-background-color: white;
+    -fx-border-color: #bbdefb;
+    -fx-border-width: 2;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 6, 0, 0, 3);
+}
+
+/* Thanh trạng thái */
+.status-bar {
+    -fx-background-color: #ffffff;
+    -fx-padding: 5;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #bbdefb;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 6, 0, 0, 3);
+}
+
+.color-picker .color-name {
+    -fx-opacity: 0;
+}
+
+.color-picker .color-rect-pane {
+    -fx-pref-width: 200px;
+}
+
+.color-picker .color-rect {
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+    -fx-border-color: #bbdefb;
+    -fx-border-width: 1;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController" alignment="CENTER" spacing="20" styleClass="home-root">
+    <Label text="🎨 ProSketch Studio" styleClass="title">
+        <font>
+            <Font name="Arial Bold" size="40"/>
+        </font>
+    </Label>
+    <Button text="🖌 New Drawing" onAction="#startNewDrawing" styleClass="home-button"/>
+    <Button text="📂 Open File" onAction="#openFile" styleClass="home-button"/>
+    <Button text="🚪 Exit" onAction="#exitApp" styleClass="home-button"/>
+</VBox>
