@@ -14,7 +14,7 @@ This project was developed as the final assignment for the Java course at the Pr
 ## Demo
 
 ### Video Demo
-Watch the demo video to see ProSketch in action:  
+Watch the demo video to see ProSketch in action (Click the thumbnail to watch the demo video):  
 [![ProSketch Demo](assets/images/video-thumbnail.png)](https://youtu.be/69UmZXzzFik)  
 
 ### Screenshots
